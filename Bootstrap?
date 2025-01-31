@@ -1,3 +1,19 @@
 What is bootstrap?
 - Bootstrap is a library used to build UI rapidly.
-- It provides pre-defined components and templates that allow to build responsive interface rapidly.
+- It provides pre-defined components and templates that allow to build responsive interfaces rapidly.
+
+Bootstrap [5]
+
+Setup Bootstrap for the project:
+
+1.
+    > npm install bootstrap  bootstrap-icons --save
+
+2. Link the following files to the page
+
+ <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+ <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+
+Note: Bootstrap makes the page interactive and responsive. It has default styles to apply.
+
