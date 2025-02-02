@@ -1,4 +1,5 @@
-          <b>Bootstrap Classes</b>
+/*
+                    Bootstrap Classes
 1. Container Classes
 
     .container        It is base class for content with margins
@@ -85,7 +86,9 @@ Syntax:
     <p class="text-center">
     <h1 class="text-end">
 
+*/
 
+          
 Ex:
 <!DOCTYPE html>
 <html lang="en">
@@ -105,6 +108,8 @@ Ex:
 </body>
 </html>
 
+/*
+              
 9. Display Classes
 
     .d-none            display none
@@ -133,6 +138,8 @@ Ex:
 
     .h-{size}        size from 1 to 6
 
+*/
+              
 Ex:
 <!DOCTYPE html>
 <html lang="en">
@@ -164,6 +171,122 @@ Ex:
             <span class="bi bi-cart"></span>
         </div>
     </header>
+</body>
+</html>
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center">
+    <form class="border border-2 bg-dark text-white border-dark rounded p-4 w-25">
+        <div class="bi bi-person-fill fs-4 fw-bold mb-4"> Register User</div>
+        <div>
+            <label class="fw-bold mb-2">User Name</label>
+            <div>
+                <input type="text" name="User Name" class="w-100">
+            </div>
+        </div>
+        <div class="my-4">
+            <label class="fw-bold mb-2">Password</label>
+            <div>
+                <input type="password" name="Password" class="w-100">
+            </div>
+        </div>
+        <div>
+            <label class="fw-bold mb-2">Mobile</label>
+            <div>
+                <input type="text" name="Mobile" class="w-100">
+            </div>
+        </div>
+        <div class="mt-3">
+            <button class="w-100">Register</button>
+        </div>
+    </form>
+</body>
+</html>
+
+/*
+              
+12. Grid Classes
+
+    .row
+    .col-{size}        1 to 12 fractions
+    .col        responsive
+
+Syntax:
+    <footer class="row">
+          <div class="col"> col-1 </div>
+          <div class="col"> col-2 </div>
+    </footer>
+
+    <footer class="row">
+         <div class="col-2"> </div>
+         <div class="col-10"> </div>
+    </footer>
+
+*/
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="bg-secondary">
+    <div class="bg-light p-4 m-4">
+        <div class="row">
+            <div class="col">
+                Amount you need <input type="text">
+            </div>
+            <div class="col">
+                for <input type="number" min="1" max="5"> years
+            </div>
+            <div class="col">
+                Interest rate <input type="number" min="10.45" max="18.45"> %
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <input type="range" class="w-100">
+                <span class="float-start">&#8377; 1,00,000</span>
+                <span class="float-end">&#8377; 10,00,000</span>
+            </div>
+            <div class="col">
+                <input type="range" class="w-100">
+                <span class="float-start">1</span>
+                <span class="float-end">5</span>
+            </div>
+            <div class="col">
+                <input type="range" class="w-100">
+                <span class="float-start">10.45%</span>
+                <span class="float-end">18.45%</span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-end">
+                <button>Calculate</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
