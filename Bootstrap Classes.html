@@ -382,3 +382,74 @@ Ex:
     </dl>
 </body>
 </html>
+
+
+/*
+14. Form Classes
+
+    .form-control        textbox, password, number, email, url, date, textarea.
+    .form-select        dropdown, listbox
+    .form-range        input range
+    .form-color [form-control-color]    input color
+    .form-control-file        input file
+    .form-label        label
+    .form-check-label        label for radio & checkbox
+    .form-check-input        radio & checkbox
+    .form-switch        container that contains radios & checkboxes.
+
+Syntax:
+    <input type="text" class="form-control">
+    <select class="form-select">
+    <input type="radio" class="form-check-input">
+
+*/
+
+      
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid d-flex justify-content-center">
+    <form class="border bg-secondary text-light border-1 rounded p-4 mt-4 w-25">
+        <div class="bi bi-person-fill fs-4 fw-bold"> Register User</div>
+        <div class="mb-3">
+            <label for="UserName" class="form-label">User Name</label>
+            <div>
+                <input type="text" name="UserName" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <div>
+                <input type="password" name="Password" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="City" class="form-label">Select City</label>
+            <div>
+                <select name="City" class="form-select">
+                    <option>Choose City</option>
+                    <option>Delhi</option>
+                    <option>Hyd</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="subscribe" class="form-label">Subscribe</label>
+            <div class="form-switch">
+                <input type="checkbox" checked class="form-check-input" name="subscribe"> <label class="form-check-label"> Yes </label>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-light w-100">Register</button>
+        </div>
+    </form>
+</body>
+</html>
