@@ -556,7 +556,8 @@ Ex:
 </body>
 </html>
 
-
+/*
+      
 17. Table Classes (After this, refer to the HTML Table concepts in the HTML and CSS code example repo.)
 
     .table
@@ -566,4 +567,60 @@ Ex:
     .table-responsive
     .table-{contextual}
 
+
+18. Progress classes
+
+    .progress
+    .progress-bar
+    .progress-bar-striped
+    .progress-bar-animated
+    .bg-{contextual}
+
+Syntax:
+    <div class="progress">
+         <div class="progress-bar"  style="width:20%"> </div>
+         ....
+    </div>
+
+19. Spinner Classes
+
+    .spinner-border
+    .spinner-border-sm
+    .spinner-grow
+    .spinner-grow-sm
+
+    <div class="spinner-border text-danger"> </div>
+
+*/
+      
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Progress</h2>
+    <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:20%">
+             20% completed
+        </div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:60%">
+            60% remaining
+       </div>
+       <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:20%">
+        20% unknown
+       </div>
+    </div>
+    <h2>Spinner</h2>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-grow text-warning"></div>
+    <button class="btn btn-primary"> <span class="spinner-border spinner-border-sm"></span> Loading </button>
+</body>
+</html>
       
