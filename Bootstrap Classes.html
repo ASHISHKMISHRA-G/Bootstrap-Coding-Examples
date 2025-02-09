@@ -715,3 +715,174 @@ Ex:
     </div>
 </body>
 </html>
+
+
+
+Relative Position
+- It is defined for parent element.
+- It keeps the child element relative to parent.
+
+Syntax:
+    <div class="parent position-relative">
+             <div class="child position-absolute"> </div>
+    </div>  
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .count {
+            font-size: 6px;
+            background-color: red;
+            padding: 2px;
+            border-radius: 50%;
+            color:white;
+            display: inline-block;
+            width: 10px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        button {
+            position: relative;
+        }
+        .men-fashion {
+            background-image: url("../public/images/men-fashion.jpg");
+            width: 500px;
+            height: 400px;
+            background-size: cover;
+            position: relative;
+        }
+        .offer {
+            background-color: red;
+            color:white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+     <button class="bi bi-cart4"> <span class="count">2</span> </button>
+     <div class="men-fashion">
+        <div class="offer">
+            <div>Save</div>
+            <div>30%</div>
+        </div>
+     </div>
+</body>
+</html>
+
+Sticky Position:
+- It keeps the element according to normal flow of document.
+- It allows the element to scroll along with the content in page.
+- It locks scrolling when it reaches the specified units.
+
+Note: Bootstrap top, bottom, start and end values can be 0,50,100.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Positions</h2>
+    <button class="btn btn-warning bi bi-cart4 position-relative"> <span class="badge position-absolute bg-danger rounded rounded-circle">2</span> </button>
+    <dl class="w-25">
+        <dt class="bg-dark text-white position-sticky top-0">Electronics</dt>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dd>Telvisions</dd>
+        <dd>Mobiles</dd>
+        <dd>Watches</dd>
+        <dt class="bg-dark text-white position-sticky top-0">Footwear</dt>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+        <dd>Sneakers</dd>
+        <dd>Casuals</dd>
+        <dd>Boots</dd>
+       
+    </dl>
+</body>
+</html>
