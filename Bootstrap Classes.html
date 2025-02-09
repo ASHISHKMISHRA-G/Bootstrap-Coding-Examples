@@ -623,4 +623,95 @@ Ex:
     <button class="btn btn-primary"> <span class="spinner-border spinner-border-sm"></span> Loading </button>
 </body>
 </html>
-      
+
+
+20. Badge Class
+
+    .badge
+    .bg-{contextual}
+    .text-{contextual}
+
+Syntax:
+    <span class="badge bg-danger rounded rounded-circle"> 3 </span>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Table of Contents</h2>
+    <ul class="list-unstyled">
+        <li class="bg-dark text-white p-2 mb-2 d-flex justify-content-between"> <span>HTML Tutorial</span> <span class="badge bg-light text-dark rounded rounded-circle">1</span> </li>
+        <li class="bg-dark text-white p-2 mb-2 d-flex justify-content-between"> <span>CSS Examples</span> <span class="badge bg-light text-dark rounded rounded-circle">4</span> </li>
+        <li class="bg-dark text-white p-2 mb-2 d-flex justify-content-between"> <span>JavaScript Basics</span> <span class="badge text-dark bg-light rounded rounded-circle">8</span> </li>
+    </ul>
+    <button class="btn btn-primary"> <span class="badge bg-dark rounded rounded-circle"> <span class="bi bi-bell-fill"></span> </span> Subscribe </button>
+</body>
+</html>
+
+21. Position Classes
+
+    .position-static
+    .position-absolute
+    .position-fixed
+    .position-relative
+    .position-sticky
+    .top-{size}
+    .bottom-{size}
+    .start-{size}
+    .end-{size}
+
+Static Position
+- It keeps the element according to normal flow of document.
+- It will not allow element to move from its place.
+- It is not effected by left, right, top and bottom.
+- It is the default position for element.
+
+Absolute Position
+- It removes element from normal flow of document.
+- It keeps the element with regard to the content in page.
+- It moves along with the content. [top, left, right, bottom]
+
+Fixed Position
+- It removes element from normal flow.
+- It keeps the element with regard to the browser.
+- It is fixed at a specific position in browser.
+- It locks scrolling.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border:1px solid black;
+            padding: 5px;
+        }
+        .offer {
+            width: 50px;
+            background-color: red;
+            color:white;
+            text-align: center;
+            position: fixed;
+            right: 10px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum nobis voluptatum, ut voluptates maiores quasi natus dicta ullam magni molestias sapiente tempora mollitia fugiat ex! Ex assumenda omnis facilis!
+        <div class="offer">50% OFF</div>
+    </div>
+</body>
+</html>
