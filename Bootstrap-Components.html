@@ -1,0 +1,73 @@
+/*
+
+      Bootstrap Components
+- Component comprises of 3 basic elements
+    a) Design
+    b) Styles
+    c) Logic
+- Design is defined with HTML
+- Styles are defined with CSS
+- Logic is configure with JavaScript/jQuery
+- A component is easy to reuse and customize.
+- It allows to create complex designs faster than normal.
+- Components are designed using classes and data-attributes that control functionality.
+
+1. Alerts
+- Alert is an embedded message box in page.
+- You can toggle the display of alert.
+
+Classes:
+    .alert
+    .alert-{contextual}
+    .alert-dismissible
+    .alert-title
+    .alert-link
+
+Attribute:
+    data-bs-dismiss     : It is used to define a component to close on click.
+               It is mostly written for buttons.
+               You have to define the component to dismiss.
+
+     <button data-bs-dismiss="alert">  OK </button>
+
+
+*/
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible w-25">
+        <button class="btn btn-close" data-bs-dismiss="alert"></button>
+        <h2 class="alert-title">Delete Record</h2>
+        <p>Record number 4 deleted successfully..</p>
+        <a href="#" class="alert-link">Help ?</a>
+        <button class="btn btn-danger" data-bs-dismiss="alert">OK</button>
+    </div>
+    <div class="alert alert-success alert-dismissible w-25">
+        <h2 class="alert-title">Record Added</h2>
+        <p>Record added successfully..</p>
+        <button class="btn btn-success" data-bs-dismiss="alert">OK</button>
+    </div>
+    <div class="alert alert-warning alert-dismissible w-25">
+        <dl>
+            <h3 class="bi bi-person-fill"> User Login</h3>
+            <dt>User Name</dt>
+            <dd><input type="text" class="form-control"></dd>
+            <dt>Password</dt>
+            <dd><input type="password" class="form-control"></dd>
+        </dl>
+        <button class="btn btn-warning">Login</button>
+        <button class="btn btn-danger" data-bs-dismiss="alert">Cancel</button>
+    </div>
+</body>
+</html>
