@@ -190,3 +190,86 @@ Ex:
 </body>
 </html>
 
+
+
+/*
+
+3. Offcanvas
+- It is similar to modal but contains orientations left, right, top and bottom.
+- It is mostly used for popups to open with regard to page margins.
+
+Classes:
+    .offcanvas
+    .offcanvas-header
+    .offcanvas-body
+    .offcanvas-start
+    .offcanvas-end
+    .offcanvas-top
+    .offcanvas-bottom
+    .offcanvas-title
+
+Attributes:
+    data-bs-dismiss
+    data-bs-target
+    data-bs-toggle
+
+Syntax:
+    <div class="offcanvas offcanvas-start">
+        <div class="offcanvas-header">
+        </div>
+        <div class="offcanvas-body">
+        </div>
+    </div>
+
+*/
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <nav class="mt-2 p-2 bg-dark text-white d-flex justify-content-between">
+        <div>
+            <button class="bi bi-justify btn btn-light" data-bs-target="#navbar" data-bs-toggle="offcanvas"></button>
+            <span class="fs-5 fw-bold">Shopper</span>
+        </div>
+        <button class="btn btn-warning bi bi-cart4" data-bs-target="#cart" data-bs-toggle="offcanvas"></button>
+    </nav>
+    <div class="offcanvas offcanvas-start" id="navbar">
+        <div class="offcanvas-header bg-dark">
+            <h3 class="offcanvas-title text-white">Shopper</h3>
+            <button class="btn btn-close-white btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <dl>
+                <dt>Electronics</dt>
+                <dd>Televisions</dd>
+                <dd>Mobiles</dd>
+                <dd>Watches</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header bg-warning">
+            <h3>You Cart Items</h3>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="../public/images/a1.jpg" width="50" height="50">
+            <br>
+            <img src="../public/images/a2.jpg" width="50" height="50">
+            <br>
+            <img src="../public/images/a3.jpg" width="50" height="50">
+        </div>
+    </div>
+</body>
+</html>
+
