@@ -71,3 +71,122 @@ Ex:
     </div>
 </body>
 </html>
+
+
+/*
+2. Modal
+- It is a pop-up dialog box.
+- It pops-up with content in background.
+- It can close on backdrop and manually with buttons.
+
+Classes
+    .modal
+    .modal-dialog
+    .modal-content
+    .modal-header
+    .modal-body
+    .modal-footer
+    .modal-dialog-centered
+    .modal-fullscreen
+    .modal-dialog-scrollable
+    .fade (for animation)
+
+Attributes
+    data-bs-target        It refers to ID of component.
+    data-bs-toggle        It refers to component name [for click event].
+    data-bs-dismiss        It is used to close a component.
+
+Syntax:
+    <div class="modal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+                  ... header ...
+                  ... body ....
+                  ... footer ...
+           </div>
+        </div>
+    </div>
+
+Note: Bootstrap 5 will not allow nested modals.
+
+*/
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <button data-bs-target="#login" data-bs-toggle="modal" class="btn btn-primary mt-2">Login</button>
+    <button data-bs-target="#offer" data-bs-toggle="modal" class="btn btn-danger mt-2"> Offers </button>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="bi bi-person-fill"> User Login</h3>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-warning ms-2" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="offer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>30% OFF ON WOMEN FASHION</h2>
+                </div>
+                <div class="modal-body">
+                    <img src="../public/images/women-fashion.jpg" class="w-100" height="200">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
