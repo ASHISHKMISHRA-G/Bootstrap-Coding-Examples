@@ -273,3 +273,63 @@ Ex:
 </body>
 </html>
 
+
+/*
+4. Dropdown
+- It is a list of options that drop in various directions.
+- Every option can be complex with rich formats, icons and images.
+
+Classes:
+    .dropdown
+    .dropdown-item
+    .dropdown-item-text
+    .dropdown-toggle
+    .dropdown-divider
+    .dropup
+    .dropstart
+    .dropend
+    .dropdown-menu
+
+Attribute:
+    data-bs-toggle="dropdown"
+
+Syntax:
+<div class="dropdown">
+     <button class="btn btn-dark dropdown-toggle"> Text </button>
+     <ul class="dropdown-menu">
+           <li class="dropdown-item"> <span class="dropdown-item-text"> Text </span> </li>
+     </ul>
+</div>
+
+*/
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Dropdown</h2>
+    <div class="dropend" >
+        <button data-bs-toggle="dropdown" class="btn btn-dark mt-3 dropdown-toggle">
+            <span class="bi bi-person-circle"></span>  <span>Login</span>
+        </button>
+        <ul class="dropdown-menu" data-bs-theme="dark">
+            <li class="dropdown-item"> <a> <span class="dropdown-item-text d-flex justify-content-between"> <span>New</span> <span>Signup</span> </a> </li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"> <a> <span class="dropdown-item-text"> <span class="bi bi-person-fill"> Profile</span> </span> </a> </li>
+            <li class="dropdown-item"> <a> <span class="dropdown-item-text"> <span class="bi bi-gift"> Offers </span> </span> </a> </li>
+            <li class="dropdown-item"> <a> <span class="dropdown-item-text"> <span class="bi bi-heart"> Wishlist </span> </span> </a> </li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"> <a> <span class="bi bi-question-circle dropdown-item-text"> Help </span> </a> </li>
+        </ul>
+    </div>
+</body>
+</html>
