@@ -333,3 +333,46 @@ Ex:
     </div>
 </body>
 </html>
+
+/*
+5. Collapse
+- It is used to show or hide any content dynamically.
+
+Classes:
+    .collapse
+    .show
+
+Attributes:
+    data-bs-target
+    data-bs-toggle
+Syntax:
+    <div class="collapse show"  id="ref">
+    </div>
+    <button data-bs-target="#ref"  data-bs-toggle="collapse">
+
+*/
+          
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="mt-4">
+        <button data-bs-target="#q1" data-bs-toggle="collapse" class="btn btn-dark w-100">What is Netflix?</button>
+        <div id="q1" class="mt-1 collapse bg-dark text-white p-2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corporis harum voluptas autem vel, optio corrupti voluptates repudiandae placeat expedita quo, qui inventore natus animi, incidunt commodi sint ut quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, excepturi. Ut, autem aperiam. Deserunt obcaecati recusandae ut saepe quae ab necessitatibus odit dolorem rerum dolorum placeat aliquam laboriosam, maxime voluptatibus!</p>
+        </div>
+        <button data-bs-target="#q2" data-bs-toggle="collapse" class="btn mt-2 btn-dark w-100"> How to watch Netflix? </button>
+        <div id="q2" class="mt-1 bg-dark text-white p-2 collapse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam placeat laborum sed, error iusto dicta in quia libero repellendus a molestiae. Architecto iste dicta similique? Suscipit, eaque itaque? Rem!</p>
+        </div>
+    </div>
+</body>
+</html>
