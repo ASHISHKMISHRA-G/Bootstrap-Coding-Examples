@@ -520,3 +520,169 @@ Ex:
 </body>
 </html>
 
+
+Carousel Controls
+ - Controls allow to move to any item previous or next.
+ - It requires carousel with ID and buttons for navigation.
+
+Classes:
+    .carousel-control-prev
+    .carousel-control-prev-icon
+    .carousel-control-next
+    .carousel-control-next-icon
+
+Attributes:
+    data-bs-target    It refers to carousel ID
+    data-bs-slide    prev or next
+
+Syntax:
+    <button class="carousel-control-prev" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"> </span>
+    </button>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" id="banners">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="300" src="../public/images/slide-1.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item ">
+                <img height="300" src="../public/images/slide-2.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img height="300" src="../public/images/slide-3.JPG" class="w-100 d-block">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+             <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+            <span class="carousel-control-next-icon"></span>
+       </button>
+    </div>
+</body>
+</html>
+
+/*
+          
+Carousel Indicators:
+- Indicator allows to navigate to any specific item in collection.
+- You can navigate in random.
+- Usually indicators are buttons with the attributes
+
+    a) data-bs-slide-to="indexNumber"
+    b) data-bs-target
+
+- All buttons are kept in a container with class
+
+    .carousel-indicators
+
+- Make sure that one indicator is active.
+
+*/
+          
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" id="banners">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="300" src="../public/images/slide-1.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item ">
+                <img height="300" src="../public/images/slide-2.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img height="300" src="../public/images/slide-3.JPG" class="w-100 d-block">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+             <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+            <span class="carousel-control-next-icon"></span>
+       </button>
+       <div class="carousel-indicators">
+           <button class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+           <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+           <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+       </div>
+    </div>
+</body>
+</html>
+
+Note: You can control the carousel slide timing by using the attribute "data-bs-interval"
+
+    <div class="carousel-item" data-bs-interval="2000">
+   
+    1000 ms  = 1second
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" id="banners">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img height="300" src="../public/images/slide-1.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item " data-bs-interval="1000">
+                <img height="300" src="../public/images/slide-2.JPG" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div style="height:300px" class="d-flex justify-content-center align-items-center">
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                            <button class="btn btn-danger"> Get Started <span class="bi bi-chevron-right"></span> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img height="300" src="../public/images/slide-3.JPG" class="w-100 d-block">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+             <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+            <span class="carousel-control-next-icon"></span>
+       </button>
+       <div class="carousel-indicators">
+           <button class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+           <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+           <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+           <button data-bs-slide-to="3" data-bs-target="#banners"></button>
+       </div>
+    </div>
+</body>
+</html>
