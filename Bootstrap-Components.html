@@ -840,3 +840,105 @@ Ex:
     </nav>
 </body>
 </html>
+
+
+/*
+10. Cards
+
+    .card
+    .card-header
+    .card-body
+    .card-footer
+    .card-title
+    .card-subtitle
+    .card-img-top
+    .card-img-bottom
+    .card-img-overlay
+
+Syntax:
+    <div class="card">
+        <img class="card-img-top">
+        <div class="card-header"> </div>
+        <div class="card-body"> </div>
+        <div class="card-footer"> </div>
+    </div>
+*/
+          
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .card {
+            width: 250px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <main class="mt-4 d-flex flex-wrap">
+        <div class="card m-2">
+            <img class="card-img-top" src="../public/images/java.png" height="150">
+            <div class="card-header">
+                <h3 class="card-title">Java</h3>
+                <p class="card-subtitle">Fullstack Java</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Topic-1</li>
+                    <li>Topic-2</li>
+                    <li>Topic-3</li>
+                    <li>Topic-4</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100"> Join Course  </button>
+            </div>
+        </div>
+
+
+        <div class="card m-2">
+            <img class="card-img-top" src="../public/images/devops.png" height="150">
+            <div class="card-header">
+                <h3 class="card-title">DevOps</h3>
+                <p class="card-subtitle">By Mr.someone</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Topic-1</li>
+                    <li>Topic-2</li>
+                    <li>Topic-3</li>
+                    <li>Topic-4</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100"> Join Course  </button>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <img class="card-img-top" src="../public/images/dotnet.png" height="150">
+            <div class="card-header">
+                <h3 class="card-title">.NET</h3>
+                <p class="card-subtitle">Fullstack Dotnet</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Topic-1</li>
+                    <li>Topic-2</li>
+                    <li>Topic-3</li>
+                    <li>Topic-4</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100"> Join Course  </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
