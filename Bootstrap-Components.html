@@ -376,3 +376,81 @@ Ex:
     </div>
 </body>
 </html>
+
+
+/*
+
+6. Accordion
+- It is a combination of collapse and show with mutex (Mutual Exclusion) mechanism.
+- It expands one and collapse all other contents in context.
+
+Classes:
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-body
+    .accordion-collapse
+    .accordion-button
+
+Attributes:
+    data-bs-target
+    data-bs-toggle
+    data-bs-parent [It refers to accordion ID from every accordion collapse]
+
+Note: All accordion-collapse use "data-bs-parent" targets accordion ID.
+
+Syntax:
+    <div class="accordion" id="head">
+       <div class="accordion-item">
+           <div class="accordion-header">
+                 <button class="accordion-button"> </button>
+          </div>
+          <div class="accordion-collapse collapse"> => data-bs-parent="#head"
+             <div class="accordion-body">
+             </div>
+         </div>
+    </div>
+</div>
+
+*/
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container-fluid">
+    <h1 class="text-center">Frequently Asked Questions</h1>
+    <div class="accordion" id="faqs">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button data-bs-target="#q1" data-bs-toggle="collapse" class="accordion-button"> What is Netflix? </button>
+            </div>
+            <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eligendi maxime odit esse delectus ullam ex, omnis similique, facere ipsum cum ut consequatur, voluptatibus totam velit ab dolorum sit rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptatem recusandae laboriosam? Saepe odio, optio inventore officiis eaque obcaecati suscipit aliquam ad laudantium eligendi fuga! Corrupti nihil error magnam impedit?</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button data-bs-target="#q2" data-bs-toggle="collapse" class="accordion-button"> How much does Netflix cost? </button>
+            </div>
+            <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque ad praesentium repellendus enim ut quas, ab numquam quae voluptatum voluptates. Possimus libero maiores illo pariatur excepturi mollitia perspiciatis quas!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deserunt nesciunt eum, aliquam cupiditate porro architecto praesentium cumque fugiat sapiente nobis maxime illum in quos neque, recusandae placeat odit. Minima.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non deserunt quisquam iure dignissimos, tempore quis sint iusto vero fuga qui! Rerum officiis reprehenderit quasi maiores tempore unde, fugit blanditiis ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores error ut optio modi labore quas possimus voluptatem quis distinctio molestias consequuntur quisquam, vitae voluptate, architecto commodi quasi accusamus, id culpa!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
